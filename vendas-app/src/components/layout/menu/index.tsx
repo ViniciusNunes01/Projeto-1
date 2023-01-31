@@ -10,6 +10,7 @@ export const Menu: React.FC = () => {
                 <MenuItem href="/" label="Home" />
                 <MenuItem href="/" label="Cadastros" />
                 <MenuItem href="/" label="Configurações" />
+                <MenuItem href="/" label="Sair" />
             </ul>
         </aside>
     )
@@ -24,9 +25,7 @@ const MenuItem: React.FC<MenuItemProps> = (props: MenuItemProps) => {
     return (
         <li>
             <Link href={props.href}>
-                <a>
-                    <span className="icon"></span> {props.label}
-                </a>
+                <span className="icon"></span> {props.label}
             </Link>
         </li>
     )
